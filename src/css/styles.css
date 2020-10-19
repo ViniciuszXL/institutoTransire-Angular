@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+html {
+    position: relative;
+    height: 100%;
+}
+  
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-weight: normal;
+    scroll-behavior: smooth;
+    font-family: 'Raleway', sans-serif;
+}
+  
+/* Conteúdo */
+.conteudo {
+    width: 100%;
+    float: left;
+    padding: 3% 4%;
+    text-align: center;
+}
+
+/* TOPO */
+.topo {
+    box-shadow: 0 0 5px grey;
+}
+
+.topo img {
+    width: 90%;
+    margin: 1% 0;
+}
+
+/* BANNER */
+.banner {
+    background: url('../assets/banner.jpg') no-repeat;
+    background-size: 100%;
+}
+
+.banner-title h1 {
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    margin: 13.5% 0;
+}
+
+/* SOBRE */
+.sobre h1 {
+    font-weight: 600;
+    font-size: 25px;
+    margin-bottom: 2%;
+}
+
+.sobre-content {
+    margin: 2% 0;
+    box-shadow: 0 0 5px grey;
+    padding: 0;
+    border-radius: 5px 5px 0 0;
+    transition: all .6s;
+}
+
+.sobre-content img {
+    width: 90%;
+    margin: 2.5% 0;
+    border-radius: 10px;
+}
+
+.sobre-content:hover {
+    box-shadow: 0 0 120px black;
+}
+
+.sobre-content-title {
+    padding: 1.5% 2.5%;
+    text-align: left;
+    background-color: #3d6def;
+    border-radius: 5px 5px 0 0;
+}
+
+.sobre-content-title h1 {
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+    margin: 0;
+}
+
+.sobre-content-text {
+    padding-top: 0;
+}
+
+.sobre-content-text p {
+    margin: 2% 0;
+}
+
+.sobre-content-text p:first-child {
+    margin-top: 0;
+}
+
+.sobre-content-text ul {
+    text-align: left;
+    margin: 0 auto;
+    width: 80%;
+}
+
+/* FALE CONOSCO */ 
+.fale-conosco {
+    padding-top: 0;
+}
+
+.fale-conosco h1 {
+    font-weight: 600;
+    font-size: 25px;
+    margin-bottom: 2%;
+}
+
+.fale-conosco-content {
+    padding: 0;
+}
+
+.fale-conosco-content p {
+    text-align: left;
+    font-size: 12.5px;
+}
+
+.fale-conosco-content h2 {
+    font-size: 17px;
+    font-weight: 600;
+    margin: 3% 0 1% 0;
+    text-align: left;
+}
+
+.fale-conosco-text {
+    font-size: 15px!important;
+}
+
+/* FOOTER */
+.footer {
+    background: #6AB04C;
+    box-shadow: 0 0 5px grey;
+}
+
+.footer img {
+    width: 90%;
+    margin: 2% 0;
+}
+
+/* FOOTER, MENU and REDE SOCIAIS */
+.footer p {
+    color: white;
+    margin: 2%;
+}
+
+.menu, .rede-sociais {
+    text-align: left;
+}
+
+.menu h1, .rede-sociais h1 {
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 2%;
+}
+
+.rede-sociais a:first-of-type {
+    margin-left: 0;
+}
+
+.rede-sociais a {
+    margin: 2.5%;
+    color: white;
+    font-size: 25px;
+}
+
+.menu ul {
+    list-style: none;
+    cursor: pointer;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu ul li {
+    margin-bottom: 2%;
+    text-decoration: underline;
+}
+
+.menu ul li:last-child {
+    margin: 0;
+}
+
+@media screen and (min-width: 700px) {
+    .topo img {
+        width: 70%;
+    }
+
+    .sobre h1, .fale-conosco h1 {
+        font-size: 34px;
+    }
+
+    .sobre-content-title h1 {
+        font-size: 25px!important;
+    }
+
+    .sobre-content-text p, .fale-conosco-text, .banner-title h1 {
+        font-size: 20px!important;
+    }
+
+    .fale-conosco-content p {
+        font-size: 17px;
+    }
+
+    .fale-conosco-content h2 {
+        font-size: 24px;
+    }
+
+    .footer img {
+        width: 75%;
+    }
+
+    .menu, .rede-sociais {
+        float: left;
+        width: 38%;
+        padding: 3% 0;
+    }
+
+}
+
+@media screen and (min-width: 900px) {
+    .topo, .sobre {
+        padding: 2% 3%;
+    }
+
+    .topo img {
+        width: 60%;
+    }
+
+    .banner-title h1 {
+        font-size: 25px!important;
+    }
+
+    .sobre h1, .fale-conosco h1 {
+        font-size: 42px;
+        margin: 2% 0;
+    }
+
+    .sobre-content {
+        width: 48%;
+        margin-right: 2%;
+    }
+
+    .fale-conosco-content p {
+        font-size: 20px;
+    }
+
+    .fale-conosco-content h2 {
+        font-size: 28px;
+    }
+
+    .footer img {
+        width: 65%;
+    }
+    
+    .footer p {
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (min-width: 1050px) {
+    .topo, .banner, .banner-title {
+        padding: 0;
+    }
+
+    .topo img {
+        width: 24%;
+    }
+
+    .sobre {
+        padding: 2%;
+    }
+
+    .sobre h1, .fale-conosco h1 {
+        margin: 0;
+    }
+
+    .sobre-content {
+        width: 24%;
+        margin-right: 1%;
+    }
+
+    .sobre-content-text p {
+        font-size: 16px!important;
+    }
+
+    .fale-conosco-content p {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .fale-conosco-text {
+        text-align: left!important;
+    }
+
+    .fale-conosco-content h2 {
+        margin: 2% 0 0 0;
+    }
+
+    .footer {
+        padding: 2%;
+    }
+
+    .footer img {
+        margin: 1%;
+        width: 28%;
+        float: left;
+        margin-right: 5%;
+    }
+
+    .footer p {
+        font-size: 15px;
+    }
+
+    .menu, .rede-sociais {
+        width: 24%;
+        padding: 0;
+    }
+
+}
